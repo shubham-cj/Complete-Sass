@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 3%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.main .main_paragraph1, .main .main_paragraph3, .main .main_paragraph2 {
+  font-weight: 400;
+}
+.main .main_paragraph1:hover, .main .main_paragraph3:hover, .main .main_paragraph2:hover {
+  color: #ff652f;
+  cursor: pointer;
+}
+.main .main_paragraph2:hover {
+  color: rgb(255, 0, 0);
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=main.css.map */
