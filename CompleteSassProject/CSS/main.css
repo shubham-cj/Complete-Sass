@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-top: 35vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../Images/model-1.jpg) center top;
+  background-size: cover;
+}
+.home-name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.home-name-last {
+  color: #ff652f;
+  font-weight: 700;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about-bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../Images/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about-bio-image p {
+  margin-bottom: 2rem;
+}
+.about-bio {
+  width: 80%;
+  text-align: center;
+}
+.about-bio .text-secondary-color {
+  padding-bottom: 1rem;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs-job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+.about .jobs-job h2, .about .jobs-job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs-job h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+}
+.projects-bio-image {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../Images/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects-bio-image .text-secondary-color {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects-item {
+  width: 60vw;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects-item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects-item img {
+  width: 100%;
+}
+.projects-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff652f;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.projects-item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects-item:hover .projects-btn {
+  opacity: 1;
+}
+.projects-btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.projects-btn {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.contact {
+  padding-bottom: 2rem;
+}
+.contact-bio-image {
+  height: 55vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../Images/model-1.jpg) center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact-bio-image .text-secondary-color {
+  font-size: 2rem;
+  margin: 0 auto 2rem;
+  width: 60%;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2% auto 0;
+  row-gap: 20px;
+}
+.contact-list .text-secondary-color {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-bio {
+    font-size: 1.3rem;
+  }
+  .projects-btn {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects-items {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-item {
+    width: 40vw;
+  }
+}
+body {
+  background: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-secondary-color {
+  color: #ff652f;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+header .fontSize {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+header .fontSize:hover {
+  color: #ff652f;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main .social-icons a {
+  padding: 0.4rem;
+  transition: all 0.3s ease-in-out;
+}
+main .social-icons a:hover {
+  color: #ff652f;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

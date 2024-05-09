@@ -1,0 +1,22 @@
+@include media-md {
+    .about-bio {
+        font-size: 1.3rem;
+    }
+
+    .projects-btn {
+        font-size: 1.5rem;
+    }
+}
+
+@include media-lg {
+    .projects-items {
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-item {
+        width: 40vw;
+    }
+}
